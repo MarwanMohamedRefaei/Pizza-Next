@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const MONGO_URL = mongodb+srv://mero:mero@cluster0.txopxwb.mongodb.net/restaurant-next?retryWrites=true&w=majority
+const MONGO_URL = `mongodb+srv://mero:mero@cluster0.txopxwb.mongodb.net/restaurant-next?retryWrites=true&w=majority`;
 
 if (!MONGO_URL) {
   throw new Error(
