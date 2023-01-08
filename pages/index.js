@@ -33,7 +33,7 @@ export const getServerSideProps = async (ctx) => {
     admin = true;
   }
 
-  const res = await axios.get("https://pizza-marwan-nextjs.onrender.com/api/products");
+  const res = await axios.get("https://pizza-next.vercel.app/api/products");
   return {
     props: {
       pizzaList: res.data,

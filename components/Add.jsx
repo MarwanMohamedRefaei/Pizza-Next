@@ -44,7 +44,7 @@ const Add = ({ setClose }) => {
         img: url,
       };
 
-      await axios.post("https://pizza-marwan-nextjs.onrender.com/api/products", newProduct);
+      await axios.post("https://pizza-next.vercel.app/api/products", newProduct);
       setClose(true);
     } catch (err) {
       console.log(err);

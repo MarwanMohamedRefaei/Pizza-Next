@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleClick = async () => {
     try {
-      await axios.post("https://pizza-marwan-nextjs.onrender.com/api/login", {
+      await axios.post("https://pizza-next.vercel.app/api/login", {
         username,
         password,
       });

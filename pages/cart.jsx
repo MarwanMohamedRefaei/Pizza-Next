@@ -24,7 +24,7 @@ const Cart = () => {
 
   const createOrder = async (data) => {
     try {
-      const res = await axios.post("https://pizza-marwan-nextjs.onrender.com/api/orders", data);
+      const res = await axios.post("https://pizza-next.vercel.app/api/orders", data);
       if (res.status === 201) {
         dispatch(reset());
         router.push(`/orders/${res.data._id}`);
